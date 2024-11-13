@@ -1,0 +1,22 @@
+consumer_groups:
+  upload-processors:
+    group.id: "dps-upload-processors"
+    auto.offset.reset: earliest
+    enable.auto.commit: false
+    max.poll.interval.ms: 300000
+    max.poll.records: 100
+    isolation.level: read_committed
+
+  document-processors:
+    group.id: "dps-doc-processors"
+    auto.offset.reset: earliest
+    enable.auto.commit: false
+    max.poll.interval.ms: 600000
+    max.poll.records: 50
+
+  classification-workers:
+    group.id: "dps-classifiers"
+    auto.offset.reset: earliest
+    enable.auto.commit: false
+    max.poll.interval.ms: 900000
+    max.poll.records: 25

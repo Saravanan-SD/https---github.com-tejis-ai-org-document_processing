@@ -1,0 +1,5 @@
+availability:
+  api_availability: 99.95%
+  processing_availability: 99.9%
+  storage_availability: 99.99%
+  overall_system_availability: 99.9%

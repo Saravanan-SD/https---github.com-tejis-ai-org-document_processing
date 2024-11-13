@@ -1,0 +1,15 @@
+processing_operations:
+  ocr:
+    p95_processing_time_s: 30
+    p99_processing_time_s: 60
+    accuracy_threshold: 0.95
+    
+  format_conversion:
+    p95_processing_time_s: 20
+    p99_processing_time_s: 40
+    quality_threshold: 0.9
+    
+  classification:
+    p95_processing_time_s: 10
+    p99_processing_time_s: 20
+    confidence_threshold: 0.8

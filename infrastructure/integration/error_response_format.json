@@ -1,0 +1,14 @@
+{
+    "error": {
+        "code": "ERROR_CODE",
+        "message": "Human readable message",
+        "details": {
+            "field": "Specific field with error",
+            "reason": "Detailed error reason",
+            "suggestion": "Suggested fix"
+        },
+        "correlationId": "UUID v4",
+        "timestamp": "ISO8601",
+        "documentation": "URL to error documentation"
+    }
+}

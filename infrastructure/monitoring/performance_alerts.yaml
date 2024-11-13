@@ -1,0 +1,27 @@
+alerting_rules:
+  high_latency:
+    condition: "http_request_duration_seconds{quantile='0.95'} > 2"
+    duration: "5m"
+    labels:
+      severity: warning
+    annotations:
+      summary: "High API latency detected"
+      description: "95th percentile latency exceeds 2 seconds"
+
+  error_rate:
+    condition: "rate(http_requests_total{status=~'5..'}[5m]) > 0.01"
+    duration: "5m"
+    labels:
+      severity: critical
+    annotations:
+      summary: "High error rate detected"
+      description: "Error rate exceeds 1% over 5 minutes"
+
+  processing_queue:
+    condition: "processing_queue_length > 1000"
+    duration: "10m"
+    labels:
+      severity: warning
+    annotations:
+      summary: "Processing queue buildup"
+      description: "Processing queue length exceeds 1000 for 10 minutes"

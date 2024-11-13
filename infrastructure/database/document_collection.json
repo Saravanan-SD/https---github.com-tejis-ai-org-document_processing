@@ -1,0 +1,78 @@
+{
+    "_id": "ObjectId",
+    "filename": "String",
+    "contentType": "String",
+    "size": "Number",
+    "storagePath": "String",
+    "metadata": {
+        "title": "String",
+        "description": "String",
+        "author": "String",
+        "createdDate": "Date",
+        "modifiedDate": "Date",
+        "pageCount": "Number",
+        "language": "String",
+        "keywords": [
+            "Array<String>"
+        ],
+        "customMetadata": "Object"
+    },
+    "versions": [
+        {
+            "versionId": "String",
+            "storagePath": "String",
+            "createdAt": "Date",
+            "createdBy": "String",
+            "size": "Number",
+            "hash": "String",
+            "comment": "String",
+            "metadata": "Object"
+        }
+    ],
+    "currentVersion": "String",
+    "processingStatus": {
+        "status": "String",
+        "lastUpdated": "Date",
+        "error": "Object",
+        "progress": "Number"
+    },
+    "createdAt": "Date",
+    "updatedAt": "Date",
+    "createdBy": "String",
+    "updatedBy": "String",
+    "tags": [
+        "Array<String>"
+    ],
+    "classification": [
+        "Array<String>"
+    ],
+    "permissions": {
+        "owners": [
+            "Array<String>"
+        ],
+        "editors": [
+            "Array<String>"
+        ],
+        "viewers": [
+            "Array<String>"
+        ]
+    },
+    "encryptionInfo": {
+        "algorithm": "String",
+        "keyId": "String",
+        "ivVector": "String"
+    },
+    "retentionPolicy": {
+        "expirationDate": "Date",
+        "archiveAfter": "Date",
+        "deleteAfter": "Date"
+    },
+    "auditTrail": [
+        {
+            "action": "String",
+            "timestamp": "Date",
+            "userId": "String",
+            "details": "Object"
+        }
+    ]
+}

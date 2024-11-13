@@ -1,0 +1,14 @@
+api_endpoints:
+  document_upload:
+    p95_latency_ms: 1000
+    p99_latency_ms: 2000
+    max_file_size_mb: 100
+  document_retrieval:
+    p95_latency_ms: 200
+    p99_latency_ms: 500
+  metadata_operations:
+    p95_latency_ms: 100
+    p99_latency_ms: 200
+  search_operations:
+    p95_latency_ms: 300
+    p99_latency_ms: 600
